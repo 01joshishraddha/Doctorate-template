@@ -1,0 +1,418 @@
+/* @import 'reset.css'; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+}
+
+.heroImage {
+    width: 100%;
+}
+
+.heroImage img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.heroContent {
+    position: absolute;
+    width: 31%;
+    top: 0;
+    margin-top: 150px;
+    margin-left: 170px;
+}
+
+.headingWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.heroContent h1 {
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: -.01em;
+    line-height: 70px;
+}
+
+.heroContent P {
+    font-family: 'DM Sans', sans-serif;
+    padding-bottom: 20px;
+    font-size: 19px;
+}
+
+.heroContent h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.commonButton {
+    letter-spacing: 1px;
+    border: none;
+    color: rgb(244, 244, 244);
+    padding: 20px 30px;
+    border-radius: 15px;
+    background-color: #3E8DFE;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.commonButton:hover {
+    color: black;
+    background-color: transparent;
+    border: 2px solid #3E8DFE;
+    cursor: pointer;
+}
+
+
+/* ================================= About Us Section ================================= */
+
+.aboutUs {
+    width: 100%;
+    background-color: #F2FBFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUs_content {
+    width: 40%;
+    margin-right: 10%;
+    /* margin-left: 10%; */
+    margin-top: 400px;
+    padding: 35px;
+
+}
+
+.aboutUsImage {
+    width: 48%;
+    margin-left: 10%;
+    margin-top: 400px;
+}
+
+.aboutUsImage img {
+    width: 100%;
+}
+
+.aboutUs_header {
+    padding-bottom: 10px;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+}
+
+.aboutUs_header h4 {
+    color: #3E8DFE;
+    margin-left: 8px;
+}
+
+.aboutUs_content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-size: 700;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.aboutUs_content p {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.aboutUs_content_card {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+    height: 260px;
+    background-color: #06306F;
+}
+
+.cardContentWrap {
+    margin-bottom: 18px;
+    display: flex;
+}
+
+.aboutUs_content_card img {
+    width: 30px;
+    height: 30px;
+}
+
+.cardContent_item {
+    display: flex;
+    list-style-type: none;
+}
+
+.cardContent ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 16px;
+}
+
+.cardContent_item {
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.cardContent_item img {
+    margin-right: 12px;
+}
+
+.appointmentBtn {
+    padding: 28px 0px;
+}
+
+.appointmentBtn:hover {
+    color: white;
+}
+
+/* ================================= Floating Card ================================= */
+.floatCardContainer {
+    position: absolute;
+    top: 960px;
+    left: 10%;
+    width: 75%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.floatCardContent img {
+    background-color: #3F8DFF;
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    border-radius: 90px;
+
+}
+
+.floatCardContainer {
+    display: flex;
+    padding: 70px 40px;
+}
+
+.floatCardContent {
+    width: 33%;
+    display: flex;
+    margin-right: 10px;
+}
+
+.floatContent {
+    margin-left: 10px;
+}
+
+.floatContent h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.floatContent p {
+    color: #545554;
+    margin-bottom: 16px;
+    font-size: 19px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.floatContent a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2.5px solid #3F8DFF;
+}
+
+.floatContent a:hover {
+    color: #3F8DFF;
+}
+
+@media screen and (max-width: 1440px) {
+    .floatCardContainer {
+        top: 920px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .heroContent {
+        margin-left: 40px;
+        width: 40%;
+    }
+
+    .floatCardContainer {
+        width: 85%;
+        top: 630px;
+        left: 4%;
+    }
+
+    .aboutUsImage {
+        margin-left: 1%;
+        /* margin-right: 0; */
+    }
+
+    .aboutUs_content {
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroContent {
+        width: 90%;
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    .floatCardContainer {
+        display: flex;
+        top: 480px;
+        /* justify-content: space-between; */
+        flex-direction: column;
+    }
+
+    .floatCardContent {
+        width: 80%;
+        padding-bottom: 50px;
+        /* padding: 30px 20px 60px 40px; */
+    }
+
+    .aboutUs {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .aboutUs_content {
+        width: 90%;
+        margin-right: 3%;
+        margin-top: 730px;
+        /* padding: 10px; */
+    }
+
+    .aboutUs_content h2 {
+        font-size: 30px;
+        width: 60%;
+    }
+
+    .cardContentWrap {
+        flex-direction: column;
+    }
+
+    .cardContent_item {
+        padding-bottom: 7px;
+    }
+
+    .aboutUsImage {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .heroContent {
+        width: 90%;
+        margin-top: 50px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    .headingWrapper h3 {
+        font-size: 13px;
+    }
+
+    .heroContent h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .heroImage {
+        /* height: 600px; */
+        width: 100%;
+    }
+
+    .floatCardContainer {
+        width: 70%;
+        top: 450px;
+        padding-bottom: 10px;
+    }
+
+    .floatCardContent {
+        flex-direction: column;
+    }
+
+    .floatCardContent img {
+        margin-bottom: 10px;
+    }
+
+    .aboutUs_content {
+        margin-top: 85rem;
+        padding-left: 20px;
+    }
+
+    .aboutUs_content h2 {
+        font-size: 25px;
+        width: 90%;
+        line-height: 30px;
+    }
+
+    .aboutUs_content p {
+        font-size: 17px;
+    }
+
+    .aboutUs_content_card {
+        padding: 20px;
+    }
+
+    .aboutUs_content h4 {
+        font-size: 18px;
+    }
+}
+
+
+/* ================================= Departments ================================= */
+.department{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 90px;
+    align-items: center;
+}
+
+.departmentHeading {
+    justify-content: space-between;
+    display: flex;
+}
+.departmentlogo{
+    display: flex;
+
+}
+.departmentLeftSec {
+    flex-direction: column;
+}
+.departmentlogo h3{
+    font-family: 'DM Sans', sans-serif;
+    font-size:16px;
+    font-weight:600;
+    padding-left: 10px;
+    color:#3F8DFF ;
+}
+.departmentHeading h2{
+    font-size:45px;
+    font-weight: 700;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.serviceButton{
+    padding: 29px 80px;
+}
